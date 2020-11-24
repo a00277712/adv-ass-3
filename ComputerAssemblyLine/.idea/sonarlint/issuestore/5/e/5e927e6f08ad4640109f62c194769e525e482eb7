@@ -1,0 +1,8 @@
+
+O
+java:S1611"2Remove the parentheses around the "part" parameter(›Ëß‹8•Åç×ß.
+I
+java:S1602",Remove useless curly braces around statement(›Ëß‹8•Åç×ß.
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ğä¥ÿÿÿÿÿ8•Åç×ß.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿ×òĞşÿÿÿÿ8•Åç×ß.
