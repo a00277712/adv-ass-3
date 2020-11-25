@@ -1,15 +1,15 @@
-package model;
+package components;
 
 import java.util.concurrent.TimeUnit;
 
-public class Motherboard implements Part {
+public class Motherboard implements IComponent {
 
     public Motherboard() throws InterruptedException {
         TimeUnit.SECONDS.sleep(5);
-        System.out.println("Motherboard built");
     }
 
-    public boolean AddPart(Computer computer) {
+    @Override
+    public boolean addComponent(Computer computer) {
         return computer.addMotherboard(this);
     }
 }
