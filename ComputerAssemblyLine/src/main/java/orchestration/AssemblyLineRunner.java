@@ -1,6 +1,6 @@
 package orchestration;
 
-import services.ComputerHolder;
+import services.ProductionLine;
 import components.*;
 
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 
 public class AssemblyLineRunner {
     public static final Semaphore semaphore = new Semaphore(3);
-    public static final ComputerHolder computerHolder = ComputerHolder.getInstance();
+    public static final ProductionLine computerHolder = ProductionLine.getInstance();
 
     public static void main(String[] args) {
 

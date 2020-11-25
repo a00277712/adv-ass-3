@@ -6,17 +6,17 @@ import components.IComponent;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
-public class ComputerHolder {
-    private static ComputerHolder instance;
+public class ProductionLine {
+    private static ProductionLine instance;
 
     private static ArrayList<Computer> computers = new ArrayList<>();
     private static ArrayList<Computer> builtComputers = new ArrayList<>();
     
-    private ComputerHolder(){}
+    private ProductionLine(){}
 
-    public static synchronized ComputerHolder getInstance() {
+    public static synchronized ProductionLine getInstance() {
         if(instance == null){
-            instance = new ComputerHolder();
+            instance = new ProductionLine();
         }
         return instance;
     }
@@ -42,7 +42,7 @@ public class ComputerHolder {
             builtComputers.add(computer);
             computers.remove(computer);
 
-            Logger logger = Logger.getLogger(ComputerHolder.class.getName());
+            Logger logger = Logger.getLogger(ProductionLine.class.getName());
 
             String incompleteCount = "number of Computers incomplete: " +  computers.size();
             String completeCount = "number of Computers complete: " + builtComputers.size();
